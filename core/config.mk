@@ -1262,6 +1262,8 @@ endif
 # in the source tree.
 dont_bother_goals := out product-graph
 
+$(eval include device/blaster/sepolicy/common/sepolicy.mk)
+
 # Make ANDROID Soong config variables visible to Android.mk files, for
 # consistency with those defined in BoardConfig.mk files.
 include $(BUILD_SYSTEM)/android_soong_config_vars.mk
